@@ -1,24 +1,18 @@
-# [TeleMute](https://github.com/MutePuker/TeleMute)
-*TG-CLI based broadcasting bot!*
-# Install
+# [SUPERBOT](https://github.com/hackr2009/SUPERBOT)
+
+# التنصبب
 ```
-cd $HOME
-git clone https://github.com/MutePuker/TeleMute.git
-cd TeleMute
+git clone https://github.com/hackr2009/SUPERBOT.git
+cd SUPERBOT
 chmod +x install.sh
 chmod +x launch.sh
 chmod +x tg
 ./install.sh
 ./launch.sh
-# Enter a phone number & confirmation code.
-```
-Create a bot!
-# Help And More...
-send ```Your PM``` to @MutePukerBot in telegram
+# يطلب رقم خلي
+-----------------------
 # Developers
-* [@MutePuker](https://telegram.me/MutePuker) - Shervin
-* [@amirhossein_h_h_h](https://telegram.me/amirhossein_h_h_h) - amirhosein
-
+* [@D_1_T](https://telegram.me/D_1_T) - beko
 # Commands
 
 ### All Commands
@@ -80,4 +74,4 @@ send ```Your PM``` to @MutePukerBot in telegram
 > [!/]unmute all 
 >>>UnMute All MSG To Group
 
-<b>Powered By MuteTeam</b>
+<b>Powered By SUPERBOT</b>
