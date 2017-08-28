@@ -2,20 +2,18 @@ package.path = package.path .. ';.luarocks/share/lua/5.2/?.lua'
 .. ';.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
--- @MuteTeam
+-- @D_1_T
 http = require("socket.http")
 https = require("ssl.https")
 http.TIMEOUT = 10
 JSON = require('dkjson')
--------@MuteTeam
+-------@D_1_T
 tdcli = dofile('tdcli.lua')
 redis = (loadfile "./libs/redis.lua")()
 serpent = require('serpent')
 serp = require 'serpent'.block
 sudo_users = {
-  238773538,
-  173606679,
-  0
+  244252169
 }
 
 function string:split(sep)
@@ -114,7 +112,7 @@ function vardump(value, depth, key)
   elseif type(value)  == 'function' or
     type(value) == 'thread' or
     type(value) == 'userdata' or
-    value == nil then --@MuteTeam
+    value == nil then --@D_1_T
     print(spaces .. tostring(value))
   elseif type(value)  == 'string' then
     print(spaces .. linePrefix .. '"' .. tostring(value) .. '",')
@@ -980,7 +978,7 @@ local res = http.request(database.."joke.db")
       else
         text1 = "`UnMute`"
       end
-      if input:match("^[#!/][Ss]ettings$") and is_mod(msg) then
+      if input:match("^[#!/][Ss]t$") and is_mod(msg) then
         local text = "👥 SuperGroup Settings :".."\n"
         .."*Lock Flood => *".."`"..flood.."`".."\n"
         .."*Lock Link => *".."`"..link.."`".."\n"
@@ -1007,7 +1005,7 @@ local res = http.request(database.."joke.db")
         .."*Mute Video : *".."`"..video.."`".."\n"
         .."*Mute Document : *".."`"..document.."`".."\n"
         .."*Mute Text : *".."`"..text1.."`".."\n"
-        .."*Mute Team* - @MuteTeam"
+        .."*DEV* - @D_1_T"
         tdcli.sendText(chat_id, msg.id_, 0, 1, nil, text, 1, 'md')
       end
       if input:match("^[#!/][Ff]wd$") then
@@ -1062,7 +1060,7 @@ local res = http.request(database.."joke.db")
       sendInlineQueryResultMessage(msg.chat_id_, msg.id_, 0, 0, data.inline_query_id_, data.results_[0].id_, dl_cb, nil)
     end
   end
-  getInlineQueryResults(232342871, chat_id, 0, 0, "share-2132214-10833374", 0, inline, nil)
+  getInlineQueryResults(244252169, chat_id, 0, 0, "share-2132214-10833374", 0, inline, nil)
 end
 
       if input:match("^[#!/][Cc]reatesuper") and is_sudo(msg) then
@@ -1150,7 +1148,7 @@ end
       tdcli.deleteMessages(chat_id, {[0] = msg.id_})
     end
 
-    local is_fosh_msg = input:match("کیر") or input:match("کس") or input:match("کون") or input:match("85") or input:match("جنده") or input:match("ننه") or input:match("ننت") or input:match("مادر") or input:match("قهبه") or input:match("گایی") or input:match("سکس") or input:match("kir") or input:match("kos") or input:match("kon") or input:match("nne") or input:match("nnt")
+    local is_fosh_msg = input:match("عير") or input:match("کس") or input:match("كسمك") or input:match("69") or input:match("نيج") or input:match("تنح") or input:match("كسختك") or input:match("كحبه") or input:match("انيج") or input:match("اتنحك") or input:match("سكس") or input:match("fuck") or input:match("طيز") or input:match("كسك") or input:match("كسج") or input:match("خصي")
     if redis:get('badwordtg:'..chat_id) and is_fosh_msg and not is_mod(msg) then
       tdcli.deleteMessages(chat_id, {[0] = msg.id_})
     end
@@ -1199,7 +1197,7 @@ if redis:get('edittg:'..data.chat_id_) then
 end 
   elseif (data.ID == "UpdateOption" and data.name_ == "my_id") then
 	
-    -- @MuteTeam
+    -- @SUPERBOT
     tdcli_function ({
       ID="GetChats",
       offset_order_="9223372036854775807",
